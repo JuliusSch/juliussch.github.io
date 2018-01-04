@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type = "text/javascript" src = "js/main.js" charset="UTF-8"></script>
+		<title>Arctic Monkeys | Posters</title>
+		<link rel = "stylesheet" href = "CSS/styles.css"/>
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "nav">
+				<nav>
+					<a class = "navElement" href = "index.html">Home</a>
+					<a class = "navElement" href = "news&events.html">News & Events</a>
+					<a class = "navElement" href = "photos&videos.html">Photos & Videos</a>
+					<a class = "navElement" href = "posters.html">Posters</a>
+					<a class = "navElement" href = "releases.html">Releases</a>
+					<a href = "https://www.instagram.com/_arctic_monkeys_/?hl=en"><img class = "socialmedia" src = "assets/instagram.png"/></a>
+					<a href = "https://plus.google.com/108403987731003023415"><img class = "socialmedia" src = "assets/googleplus2.png"/></a>
+					<a href = "https://twitter.com/arcticmonkeys?lang=en"><img class = "socialmedia" src = "assets/twitter.png"/></a>
+					<a href = "https://www.facebook.com/ArcticMonkeys/"><img class = "socialmedia" src = "assets/facebook3.png"/></a>
+					<a href = "https://www.youtube.com/channel/UC-KTRBl9_6AX10-Y7IKwKdw"><img class = "socialmedia" src = "assets/youtube2.png"/></a>
+				</nav>
+			</div>
+			<div id = "canvasContainer">
+				<div id = "toolbar">
+					<div id = "rad">
+						<!--<span id = "radval" class = "nonhighlight">10</span>-->
+						<div id = "incrad" class = "control nonhighlight">+</div>
+						<div id = "decrad" class = "control nonhighlight">-</div>
+						<input type = "color" id = "colourpicker"/>
+						<input type = "radio" class = "radio" id = "selectpaint"/>
+						<input type = "radio" class = "radio" id = "selectstamp"/>
+						<!--<span id = "stampscale" class = "nonhighlight">10</span>-->
+						<div id = "incscale" class = "control nonhighlight">+</div>
+						<div id = "decscale" class = "control nonhighlight">-</div>
+						<img class = "drawnimage" src = "assets/drawimg1.png"/>
+						<img class = "drawnimage" src = "assets/amlogo.png"/>
+						<img class = "drawnimage" src = "assets/drawimg12.png"/>
+						<img class = "drawnimage" src = "assets/drawimg2.png"/>
+						<img class = "drawnimage" src = "assets/drawimg3.png"/>
+						<img class = "drawnimage" src = "assets/drawimg4.png"/>
+						<img class = "drawnimage" src = "assets/drawimg5.png"/>
+					</div>
+				</div>
+				<canvas id = "posterCanvas" width = "600" height = "800" ></canvas>
+			</div>
+			<div class = "footer">
+				<div class = "footerNav">
+					<a class = "navElement" href = "index.html">Home</a>
+					<a class = "navElement" href = "news&events.html">News & Events</a>
+					<a class = "navElement" href = "photos&videos.html">Photos & Videos</a>
+					<a class = "navElement" href = "posters.html">Posters</a>
+					<a class = "navElement" href = "releases.html">Releases</a>
+				</div>
+			</div>
+		</div>
+		<div id = "cursorimage"><img src = "assets/drawimg1.png"/></div>
+	</body>
+</html>

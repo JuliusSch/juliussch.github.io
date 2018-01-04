@@ -1,0 +1,265 @@
+html {
+	background: black;
+	font-family: Verdana, Georgia, Serif;
+	font-size: 80%;
+	color: white;
+	
+}
+
+.container {
+	background: black;
+	max-width: 1500px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.nav {
+	text-align: left;
+	height: 40px;
+	margin-top: 0px;
+	padding-top: 20px;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+}
+
+.navElement {
+	text-decoration: none;
+	color: white;
+	display: inline;
+	margin-left: 0px;
+	margin-right: 40px;
+	padding-top: 0px;
+	font-size: 130%;
+	-webkit-transition: padding-top 0.2s;
+    transition: padding-top 0.2s;
+}
+
+.navElement:hover {
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	padding-top: 20px;
+}
+
+.socialmedia {
+	height: 30px;
+	width: 30px;
+	float: right;
+	margin-left: 10px;
+}
+
+.socialmedia:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition: 0.1s;
+	transition: 0.1s;
+}
+
+#video {
+	width: 280px;
+	height: auto;
+	float: left;
+	clear: left;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#photos {
+	width: 280px;
+	padding-bottom: 40px;
+	float: left;
+}
+
+.photomain {
+	width: 260px;
+	height: auto;
+	padding: 10px 10px 0px 10px;
+}
+
+.photo {
+	width: 90%;
+	height: auto;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+#logo {
+	height: auto;
+	border-bottom: 2px solid white;
+}
+
+#logo img {
+	margin: auto;
+	display: block;
+}
+
+#news {
+	min-width: 360px;
+	padding: 20px;
+	margin-right: 280px;
+	margin-left: 280px;
+}
+
+#contact {
+	float: right;
+	width: 260px;
+	padding: 10px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+	margin-top: 60px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+	
+	.navElement {
+		margin-right: 10px;
+		font-size: 80%;
+	}
+	
+	.socialmedia {
+		height: 10px;
+		width: 10px;
+		margin-left: 3px;
+	}
+}
+
+@media (max-width: 1000px) and (min-width: 601px) {
+    .column {
+        width: 50%;
+    }
+	
+	.navElement {
+		margin-right: 20px;
+		font-size: 100%;
+	}
+	
+	.socialmedia {
+		height: 20px;
+		width: 20px;
+		margin-left: 7px;
+	}
+}
+
+.footerNav {
+	text-align: left;
+	height: 40px;
+	margin-top: 20px;
+	padding-top: 20px;
+	clear: both;
+	border-top: 2px solid white;
+}
+
+#posterCanvas {
+	display: block;
+	background-color: white;
+	margin: auto;
+	/*box-shadow: 5px 5px 5px 5px #404040;*/
+}
+
+#canvasContainer {
+	max-width: 1500px;
+	width: 100%;
+	max-height: 800px;
+	background-image: url("../assets/background.png");
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#toolbar {
+	width: 90px;
+	height: 800px;
+	padding: 10px;
+	background-color: #3f3f3f;
+	float: left;
+	position: absolute;
+	margin-left: 20px;
+}
+
+.control {
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: #7f7f7f;
+	text-align: center;
+	margin: 7px 7px 7px 7px;
+	padding-top: 5px;
+	float: right;
+	font-size: 100%;
+}
+
+.control:hover {
+	transform: scale(1.1);
+}
+
+#radval {
+	text-align: center;
+	padding-top: 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 70px;
+	width: 40px;
+	margin: 5px 5px 5px 5px;
+	float: left;
+	background-color: #7f7f7f;
+}
+
+.radio {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.nonhighlight {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;/* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.drawnimage {
+	width: 90px;
+	height: 66%;
+	padding-top: 0px;
+}
+
+.drawnimage:hover {
+	-webkit-transition: width 0.2s;
+	transition: width 0.2s;
+	width: 300px;
+	float: left;
+}
+
+#colourpicker {
+	width: 80px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 3px;
+}
+
+#cursorimage {
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+}
