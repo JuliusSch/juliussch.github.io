@@ -163,6 +163,14 @@ h1 {
 		width: 240px;
 		height: 135px;
 	}
+	
+	#posterCanvas {
+		width: 300px;
+		height: 400px;
+		margin-right: 0px;
+		margin-left: 0px;
+		float: right;
+	}
 }
 
 @media (max-width: 1000px) and (min-width: 601px) {
@@ -188,6 +196,14 @@ h1 {
 	.musicvideo {
 		width: 480px;
 		height: 270px;
+	}
+	
+	#posterCanvas {
+		width: 400px;
+		height: 533px;
+		margin-right: 0px;
+		margin-left: 0px;
+		float: right;
 	}
 }
 
