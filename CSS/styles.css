@@ -74,6 +74,12 @@ h1 {
 	padding-bottom: 10px;
 }
 
+.musicvideo {
+	margin: auto;
+	display: block;
+	margin-bottom: 50px;
+}
+
 #photos {
 	width: 280px;
 	padding-bottom: 40px;
