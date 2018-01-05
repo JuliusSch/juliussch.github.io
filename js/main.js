@@ -148,6 +148,10 @@ function switchToPaint() {
 }
 
 function downloadImage(e) {
+	if (canvas.msToBlob) { //for IE
+                var blob = canvas.msToBlob();
+                window.navigator.msSaveBlob(blob, 'myPainting.png');
+            } //for good browsers
 	downloadbtn.href = canvas.toDataURL();
 	downloadbtn.download = 'myPainting.png';
 }
