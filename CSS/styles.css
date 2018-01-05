@@ -68,8 +68,8 @@ h1 {
 #video {
 	width: 280px;
 	height: auto;
-	float: left;
-	clear: left;
+	float: right;
+	clear: right;
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
@@ -114,6 +114,7 @@ h1 {
 
 #news {
 	min-width: 360px;
+	width: 40%;
 	padding: 20px;
 	margin-right: 280px;
 	margin-left: 280px;
@@ -123,6 +124,7 @@ h1 {
 	float: right;
 	width: 260px;
 	padding: 10px;
+	clear: right;
 }
 
 .column {
@@ -158,8 +160,8 @@ h1 {
 	}
 	
 	.musicvideo {
-		width: 320px;
-		height: 180px;
+		width: 240px;
+		height: 135px;
 	}
 }
 
