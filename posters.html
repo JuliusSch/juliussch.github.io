@@ -26,25 +26,26 @@
 			<div id = "canvasContainer">
 				<div id = "toolbar">
 					<div id = "rad">
-						<!--<span id = "radval" class = "nonhighlight">10</span>-->
-						<div id = "incrad" class = "control nonhighlight">+</div>
-						<div id = "decrad" class = "control nonhighlight">-</div>
-						<input type = "color" id = "colourpicker"/>
-						<input type = "radio" class = "radio" id = "selectpaint"/>
-						<input type = "radio" class = "radio" id = "selectstamp"/>
-						<!--<span id = "stampscale" class = "nonhighlight">10</span>-->
-						<div id = "incscale" class = "control nonhighlight">+</div>
-						<div id = "decscale" class = "control nonhighlight">-</div>
-						<img class = "drawnimage" src = "assets/drawimg1.png"/>
-						<img class = "drawnimage" src = "assets/amlogo.png"/>
-						<img class = "drawnimage" src = "assets/drawimg12.png"/>
-						<img class = "drawnimage" src = "assets/drawimg2.png"/>
-						<img class = "drawnimage" src = "assets/drawimg3.png"/>
-						<img class = "drawnimage" src = "assets/drawimg4.png"/>
-						<img class = "drawnimage" src = "assets/drawimg5.png"/>
+						<div id = "incrad" class = "control nonhighlight" title = "increase paintbrush size">+</div>
+						<span id = "radspan" class = "sizevalue nonhighlight" title = "paintbrush size">10</span>						
+						<div id = "decrad" class = "control nonhighlight" title = "decrease paintbrush size">-</div>
+						<input type = "color" id = "colourpicker" title = "select brush colour"/>
+						<input type = "radio" class = "radio" id = "selectpaint" title = "select paintbrush"/>
+						<input type = "radio" class = "radio" id = "selectstamp" title = "select stamp"/>
+						<div id = "incscale" class = "control nonhighlight" title = "increase stamp size">+</div>
+						<span id = "imgscalespan" class = "sizevalue nonhighlight" title = "stamp size (percentage)">100</span>
+						<div id = "decscale" class = "control nonhighlight" title = "decrease stamp size">-</div>
+						<img class = "drawnimage" src = "assets/drawimg1.png" title = "select this image"/>
+						<img class = "drawnimage" src = "assets/amlogo.png" title = "select this image"/>
+						<img class = "drawnimage" src = "assets/drawimg12.png" title = "select this image"/>
+						<img class = "drawnimage" src = "assets/drawimg2.png" title = "select this image"/>
+						<img class = "drawnimage" src = "assets/drawimg3.png" title = "select this image"/>
+						<img class = "drawnimage" src = "assets/drawimg4.png" title = "select this image"/>
+						<img class = "drawnimage" src = "assets/drawimg5.png" title = "select this image"/>
 					</div>
 				</div>
 				<canvas id = "posterCanvas" width = "600" height = "800" ></canvas>
+				<div><a id = "downloadbutton">download image</a></div>
 			</div>
 			<div class = "footer">
 				<div class = "footerNav">

@@ -2,7 +2,8 @@ window.onload = function() {
 	console.log("ready");
 	canvas = document.getElementById("posterCanvas");
 	c = canvas.getContext("2d");
-	radSpan = document.getElementById("radval");
+	radSpan = document.getElementById("radspan");
+	stampScaleSpan = document.getElementById("imgscalespan");
 	decRad = document.getElementById("decrad");
 	incRad = document.getElementById("incrad");
 	colour = '#aabbcc';
@@ -11,22 +12,24 @@ window.onload = function() {
 	cursorImage = document.getElementById("cursorimage");
 	selectPaint = document.getElementById('selectpaint');
 	selectStamp = document.getElementById('selectstamp');
+	downloadbtn = document.getElementById('downloadbutton');
+	downloadbtn.addEventListener('click', downloadImage);
 	selectStamp.addEventListener('click', switchToStamp);
 	selectPaint.addEventListener('click', switchToPaint);
 	selectPaint.checked = true;
 	decRad.addEventListener('click', function(e) {
 		setRadius(radius - 5);
-		decRad.style.transform = 'scale(1.5)';
 	});
 	incRad.addEventListener('click', function(e) {
 		setRadius(radius + 5);
-		incRad.style.transform = 'scale(1.5)';
 	});
 	document.getElementById('incscale').addEventListener('click', function(e) {
 		if (stampScale < 4) stampScale += 0.05;
+		stampScaleSpan.innerHTML = Math.round(stampScale * 100);
 	});
 	document.getElementById('decscale').addEventListener('click', function(e) {
 		if (stampScale > 0.2) stampScale -= 0.05;
+		stampScaleSpan.innerHTML = Math.round(stampScale * 100);
 	});
 	colourPicker.addEventListener('input', function(e) {
 		console.log('colour change');
@@ -55,7 +58,8 @@ window.onload = function() {
 }
 
 var c, radius = 10, radSpan, decRad, incRad, colourPicker, colour, drawImages, imageToDraw,
-cursorImage, selectPaint, selectStamp, stampScale = 1, lastScroll = 0, canvas;
+cursorImage, selectPaint, selectStamp, stampScale = 1, lastScroll = 0, canvas, stampScaleSpan
+downloadbtn;
 
 dragging = false;
 
@@ -113,7 +117,7 @@ function mouseMove(e) {
 	cursorImage.style.top = y + 'px';
 }
 
-var minRad = 1, maxRad = 100, defaultRad = 10;
+var minRad = 1, maxRad = 80, defaultRad = 10;
 
 function setRadius(newRad) {
 	if (newRad < minRad) {
@@ -141,4 +145,9 @@ function switchToPaint() {
 	selectStamp.checked = false;
 	selectPaint.checked = true;
 	cursorImage.style.opacity = 0;
+}
+
+function downloadImage(e) {
+	downloadbtn.href = canvas.toDataURL();
+	downloadbtn.download = 'myPainting.png';
 }

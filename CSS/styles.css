@@ -6,6 +6,14 @@ html {
 	
 }
 
+h1 {
+	border-bottom: 2px solid white;
+}
+
+#newscontent {
+	padding-top: 100px;
+}
+
 .container {
 	background: black;
 	max-width: 1500px;
@@ -133,6 +141,10 @@ html {
 		font-size: 80%;
 	}
 	
+	.container {
+		width: 100%;
+	}
+	
 	.socialmedia {
 		height: 10px;
 		width: 10px;
@@ -144,6 +156,10 @@ html {
     .column {
         width: 50%;
     }
+	
+	.container {
+		width: 90%;
+	}
 	
 	.navElement {
 		margin-right: 20px;
@@ -201,7 +217,7 @@ html {
 	-moz-box-sizing: border-box;
 	background-color: #7f7f7f;
 	text-align: center;
-	margin: 7px 7px 7px 7px;
+	margin: 2px 0px 2px 0px;
 	padding-top: 5px;
 	float: right;
 	font-size: 100%;
@@ -211,22 +227,35 @@ html {
 	transform: scale(1.1);
 }
 
-#radval {
+.sizevalue {
 	text-align: center;
-	padding-top: 20px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	height: 70px;
-	width: 40px;
-	margin: 5px 5px 5px 5px;
-	float: left;
+	float: right;
+	margin: 8px 2px 2px 2px;
 	background-color: #7f7f7f;
+	width: 24px;
 }
 
 .radio {
 	display: inline-block;
 	margin-left: 20px;
 	margin-top: 10px;
+}
+
+#downloadbutton {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	background-color: rgb(22, 175, 226);
+	padding: 10px 15px;
+	border-radius: 8px;
+	font-size: 120%;
+	text-decoration: none;
+}
+
+#downloadbutton:hover {
+	color: rgb(0, 3, 117);
 }
 
 .nonhighlight {
