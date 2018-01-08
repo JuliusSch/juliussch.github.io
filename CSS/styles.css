@@ -44,6 +44,14 @@ h1 {
     transition: padding-top 0.2s;
 }
 
+#readmore {
+	color: white;
+}
+
+#contact {
+	float: right;
+}
+
 .navElement:hover {
 	text-decoration: none;
 	background-color: white;
@@ -66,10 +74,8 @@ h1 {
 }
 
 #video {
-	width: 280px;
+	width: 90%;
 	height: auto;
-	float: right;
-	clear: right;
 	padding-top: 20px;
 	padding-bottom: 10px;
 }
@@ -81,16 +87,11 @@ h1 {
 	border: 0px;
 }
 
-#photos {
-	width: 280px;
-	padding-bottom: 40px;
-	float: left;
-}
-
 .photomain {
-	width: 260px;
+	width: 90%;
 	height: auto;
-	padding: 10px 10px 0px 10px;
+	align: center;
+	padding: 20px 20px 20px 20px;
 }
 
 .photo {
@@ -111,21 +112,6 @@ h1 {
 #logo img {
 	margin: auto;
 	display: block;
-}
-
-#news {
-	min-width: 360px;
-	width: 40%;
-	padding: 20px;
-	margin-right: 280px;
-	margin-left: 280px;
-}
-
-#contact {
-	float: right;
-	width: 260px;
-	padding: 10px;
-	clear: right;
 }
 
 .column {
@@ -164,6 +150,13 @@ h1 {
 		width: 240px;
 		height: 135px;
 	}
+	
+	#toolbar {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		margin: 0px;
+	}
 }
 
 @media (max-width: 1000px) and (min-width: 601px) {
@@ -189,6 +182,13 @@ h1 {
 	.musicvideo {
 		width: 480px;
 		height: 270px;
+	}
+	
+	#toolbar {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		margin: 0px;
 	}
 }
 
