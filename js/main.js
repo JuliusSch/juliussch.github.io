@@ -121,10 +121,10 @@ var minRad = 1, maxRad = 80, defaultRad = 10;
 
 function setRadius(newRad) {
 	if (newRad < minRad) {
-		return;
+		newRad = minRad;
 	}
 	if (newRad > maxRad) {
-		return;
+		newRad = maxRad;
 	}
 	if (newRad % 5 == 1 && newRad != 1) {
 		newRad -= 1;
