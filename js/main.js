@@ -49,7 +49,7 @@ window.onload = function() {
 	document.addEventListener('mousemove', mouseMove);
 	var imageToLoad = new Image();
 	if (localStorage.getItem('img')) {
-		console.log('image found');
+		console.log('saved image found');
 		imageToLoad.onload = function() {
 			c.drawImage(imageToLoad, 0, 0);
 		}
@@ -121,7 +121,7 @@ var minRad = 1, maxRad = 80, defaultRad = 10;
 
 function setRadius(newRad) {
 	if (newRad < minRad) {
-		newRad = minRad;
+		return;
 	}
 	if (newRad > maxRad) {
 		return;
@@ -150,7 +150,7 @@ function switchToPaint() {
 function downloadImage(e) {
 	if (canvas.msToBlob) { //for IE
                 var blob = canvas.msToBlob();
-                window.navigator.msSaveBlob(blob, 'myPainting.png');
+                window.navigator.msSaveBlob(blob, 'myPoster.png');
             } //for good browsers
 	downloadbtn.href = canvas.toDataURL();
 	downloadbtn.download = 'myPainting.png';
