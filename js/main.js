@@ -1,5 +1,4 @@
 window.onload = function() {
-	console.log("ready");
 	canvas = document.getElementById("posterCanvas");
 	c = canvas.getContext("2d");
 	radSpan = document.getElementById("radspan");
@@ -117,19 +116,8 @@ function mouseMove(e) {
 	cursorImage.style.top = y + 'px';
 }
 
-var minRad = 1, maxRad = 80, defaultRad = 10;
-
 function setRadius(newRad) {
-	if (newRad < minRad) {
-		newRad = minRad;
-	}
-	if (newRad > maxRad) {
-		newRad = maxRad;
-	}
-	if (newRad % 5 == 1 && newRad != 1) {
-		newRad -= 1;
-	}
-	radius = newRad;
+	if (newRad >= 5 && newRad <= 80) radius = newRad; 
 	c.lineWidth = radius;
 	radSpan.innerHTML = radius;
 	switchToPaint();
