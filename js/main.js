@@ -153,5 +153,5 @@ function downloadImage(e) {
                 window.navigator.msSaveBlob(blob, 'myPoster.png');
             } //for good browsers
 	downloadbtn.href = canvas.toDataURL();
-	downloadbtn.download = 'myPainting.png';
+	downloadbtn.download = 'myPoster.png';
 }
