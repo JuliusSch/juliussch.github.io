@@ -8,6 +8,9 @@ A mock-up website for a band making use of fundamental HTML and CSS. Also includ
 
 ## Example posters made using the tool
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![demo poster 1](demo/myPoster_1.png) | ![demo poster 1](demo/myPoster_2.png)
 ![demo poster 1](demo/myPoster_1.png)
 
 ![demo poster 2](demo/myPoster_2.png)
