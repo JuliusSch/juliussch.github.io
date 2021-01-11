@@ -8,10 +8,10 @@ A mock-up website for a band making use of fundamental HTML and CSS. Also includ
 
 ## Example posters made using the tool
 
-![demo poster 1](demo/myPoster_(3).png)
+![demo poster 1](demo/myPoster_1.png)
 
-![demo poster 2](demo/myPoster (4).png)
+![demo poster 2](demo/myPoster_2.png)
 
-![demo poster 3](demo/myPoster (5).png)
+![demo poster 3](demo/myPoster_3.png)
 
-![demo poster 4](demo/myPoster (6).png)
+![demo poster 4](demo/myPoster_4.png)
